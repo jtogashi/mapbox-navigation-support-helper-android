@@ -9,9 +9,11 @@ appcompat = "1.7.0"
 material = "1.12.0"
 activity = "1.10.1"
 constraintlayout = "2.2.1"
+car = "1.4.0"
 
-mapboxNav = "3.8.2"
-mapboxSearch = "2.12.0"
+mapboxMaps = "11.19.0"
+mapboxNav = "3.19.0"
+mapboxSearch = "2.19.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -22,11 +24,22 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-car = { group = "androidx.car.app", name = "app", version.ref = "car" }
+androidx-car-projected = { group = "androidx.car.app", name = "app-projected", version.ref = "car" }
 
-mapbox-navigationcore = { group = "com.mapbox.navigationcore", name = "android", version.ref = "mapboxNav" }
-mapbox-navigationcore-auto = { group = "com.mapbox.navigationcore", name = "android-auto-components", version.ref = "mapboxNav" }
-mapbox-search-autofill = { group = "com.mapbox.search", name = "autofill", version.ref = "mapboxSearch" }
-mapbox-search = { group = "com.mapbox.search", name = "mapbox-search-android", version.ref = "mapboxSearch" }
+mapbox-navigationcore = { group = "com.mapbox.navigationcore", name = "android-ndk27", version.ref = "mapboxNav" }
+mapbox-navigationcore-auto = { group = "com.mapbox.navigationcore", name = "android-auto-components-ndk27", version.ref = "mapboxNav" }
+mapbox-search-autofill = { group = "com.mapbox.search", name = "autofill-ndk27", version.ref = "mapboxSearch" }
+mapbox-search = { group = "com.mapbox.search", name = "mapbox-search-android-ndk27", version.ref = "mapboxSearch" }
+mapbox-search-native = { group = "com.mapbox.search", name = "mapbox-search-android-native-ndk27", version.ref = "mapboxSearch" }
+
+mapbox-navigation-ui-components = { module = "com.mapbox.navigationcore:ui-components-ndk27", version.ref = "mapboxNav" }
+mapbox-navigation-navigation = { module = "com.mapbox.navigationcore:navigation-ndk27", version.ref = "mapboxNav" }
+mapbox-navigation-ui-maps = { module = "com.mapbox.navigationcore:ui-maps-ndk27", version.ref = "mapboxNav" }
+mapbox-navigation-tripdata = { module = "com.mapbox.navigationcore:tripdata-ndk27", version.ref = "mapboxNav" }
+mapbox-navigation-voice = { module = "com.mapbox.navigationcore:voice-ndk27", version.ref = "mapboxNav" }
+mapbox-maps-android-ndk27 = { module = "com.mapbox.maps:android-ndk27", version.ref = "mapboxMaps" }
+mapbox-search-android-ui = { module = "com.mapbox.search:mapbox-search-android-ui-ndk27", version.ref = "mapboxSearch" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

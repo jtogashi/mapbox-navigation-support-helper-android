@@ -12,7 +12,7 @@ class MyApplication : Application() {
             MapboxNavigationApp.setup {
                 NavigationOptions.Builder(this)
                     .build()
-            }
+            }.attachAllActivities(this)
         }
     }
 }

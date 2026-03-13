@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
 
     <application
         android:name=".MyApplication"
@@ -20,11 +20,6 @@
         <!-- metadata if your app supports Android Auto -->
         <meta-data
             android:name="com.google.android.gms.car.application"
-            android:resource="@xml/automotive_app_desc" />
-
-        <!-- metadata if your app supports Android Automotive -->
-        <meta-data
-            android:name="com.android.automotive"
             android:resource="@xml/automotive_app_desc" />
 
         <service
